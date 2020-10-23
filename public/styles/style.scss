@@ -11,10 +11,9 @@ $box-bg: #f5f5f5;
 .container {
   height: 100vh;
   display: flex;
-  align-items: center;
   justify-content: center;
 
-  div {
+  .mini-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -29,7 +28,14 @@ $box-bg: #f5f5f5;
 .box {
   height: 400px;
   width: 400px;
-  border: 0.5px solid;
-  border-radius: 10px;
+  border: 1px solid;
+  border-radius: 7px;
   background: $box-bg;
+
+  div {
+    text-align: center;
+    input {
+      width: 80%;
+    }
+  }
 }

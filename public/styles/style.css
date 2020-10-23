@@ -11,15 +11,12 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-.container div {
+.container .mini-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -35,15 +32,23 @@
           align-items: center;
 }
 
-.container div h1 {
+.container .mini-container h1 {
   font-family: Roboto;
 }
 
 .box {
   height: 400px;
   width: 400px;
-  border: 0.5px solid;
-  border-radius: 10px;
+  border: 1px solid;
+  border-radius: 7px;
   background: #f5f5f5;
+}
+
+.box div {
+  text-align: center;
+}
+
+.box div input {
+  width: 80%;
 }
 /*# sourceMappingURL=style.css.map */
