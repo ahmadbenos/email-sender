@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Turret+Road:wght@500&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -34,8 +34,13 @@ $box-bg: #f5f5f5;
 
   div {
     text-align: center;
+    padding-top: 12px;
     input {
       width: 80%;
+      padding: 8px;
+      font-family: Turret Road;
+      font-size: 20px;
+      margin-top: 10px;
     }
   }
 }
