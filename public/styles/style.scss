@@ -26,7 +26,7 @@ $box-bg: #f5f5f5;
 }
 
 .box {
-  height: 400px;
+  height: auto;
   width: 400px;
   border: 1px solid;
   border-radius: 7px;
@@ -41,6 +41,14 @@ $box-bg: #f5f5f5;
       font-family: Turret Road;
       font-size: 20px;
       margin-top: 10px;
+    }
+
+    textarea {
+      width: 80%;
+      padding: 5px;
+      font-family: Turret Road;
+      margin-top: 10px;
+      font-size: 18px;
     }
   }
 }
