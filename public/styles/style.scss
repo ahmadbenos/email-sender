@@ -45,6 +45,18 @@ $box-bg: #f5f5f5;
       background: #d70000;
       color: white;
     }
+
+    .link {
+      font-size: 17px;
+      font-family: Roboto;
+
+      a {
+        color: blue;
+        &:visited {
+          color: blue;
+        }
+      }
+    }
   }
 }
 
@@ -102,3 +114,5 @@ $box-bg: #f5f5f5;
     }
   }
 }
+
+@import "./responsive";

@@ -59,6 +59,19 @@
   color: white;
 }
 
+.container .mini-container .link {
+  font-size: 17px;
+  font-family: Roboto;
+}
+
+.container .mini-container .link a {
+  color: blue;
+}
+
+.container .mini-container .link a:visited {
+  color: blue;
+}
+
 .box {
   height: auto;
   width: 400px;
@@ -122,6 +135,19 @@
   }
   to {
     background-color: #037cc2;
+  }
+}
+
+@media only screen and (max-device-width: 417px) {
+  .container .mini-container h1 {
+    font-size: 26px;
+  }
+  .container .mini-container .fail-alert,
+  .container .mini-container .success-alert {
+    width: 300px;
+  }
+  .box {
+    width: 300px;
   }
 }
 /*# sourceMappingURL=style.css.map */
