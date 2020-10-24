@@ -11,6 +11,8 @@ app.use(urlencoded({extended: false}));
 
 app.use(express.static(path.join(__dirname, "public")));
 
+app.use("/send", require("./routes/send"))
+
 
 
 const PORT = process.env.PORT || 5000;
