@@ -23,6 +23,28 @@ $box-bg: #f5f5f5;
     h1 {
       font-family: Roboto;
     }
+
+    .success-alert {
+      width: 400px;
+      border: 1px solid black;
+      text-align: center;
+      padding: 10px;
+      margin-bottom: 5px;
+      font-family: Roboto;
+      background: #4cb050;
+      color: white;
+    }
+
+    .fail-alert {
+      width: 400px;
+      border: 1px solid black;
+      text-align: center;
+      padding: 10px;
+      margin-bottom: 5px;
+      font-family: Roboto;
+      background: #d70000;
+      color: white;
+    }
   }
 }
 

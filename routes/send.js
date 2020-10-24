@@ -20,21 +20,27 @@ router.post("/", (req, res) => {
 
         nodemailerMailgun.sendMail({
             from: email,
-            to: 'benos.tarabain@gmail.com',
+            to: process.env.MY_EMAIL,
             subject: subject,
-            text: message
+            text: `Name: ${name}
+
+Message: ${message}`
           }, (err, info) => {
             if (err) {
               console.log(`Error: ${err}`);
+              req.flash("email_error", "Email failed to send!")
+              res.redirect("/");
             }
             else {
                 console.log(info)
+                req.flash("email_sent", "Email successfully sent!");
                 res.redirect("/");
             }
           });
-
-    
 })
+
+
+
 
 
 module.exports = router;

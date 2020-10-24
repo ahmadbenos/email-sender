@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="mini-container">
+        <h1>Send me an Email</h1>
+        <% if(email_sent != ""){ %>
+        <div class="success-alert">
+            <p><%= email_sent %></p>
+        </div>
+        <% } else if(email_error != ""){ %>
+        <div class="fail-alert">
+            <p><%= email_error %></p>
+        </div>
+        <% } %>
+        <div class="box">
+            <div class="input-div">
+                <form action="/send" method="POST" id="email-form">
+                    <input type="text" name="name" placeholder="your name">
+                    <input type="text" name="email" placeholder="your email">
+                    <input type="text" name="subject" placeholder="subject">
+                    <textarea name="message" id="" cols="30" rows="9"
+                        placeholder="your message..."></textarea><br>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
